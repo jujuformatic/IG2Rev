@@ -42,7 +42,6 @@
     position: absolute;
     bottom: 0;
     right: 0;
-    border-radius: 10px;
     width: 15%;
     display: none;
     height: fit-content;
@@ -89,7 +88,6 @@
 }
 .chapter-menu-item:hover{
     background-color: #cfcfcf;
-    border: 1px solid black;
     border-radius: 10px;
     cursor: pointer;
 }

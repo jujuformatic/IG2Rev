@@ -25,7 +25,7 @@
             <img src="ressources/IG2Rev_Logo.png">
         </div>
         <div id="collapse-button" onclick="CollapseBar()">
-            <img src="ressources/collapse.jpeg">
+            <img src="ressources/collapse.png">
         </div>
         <div class="link" onclick="location.href='index.php?view=accueil'">
             <h1>Accueil</h1>
@@ -90,18 +90,27 @@
         </form>
     </div>
     <div id="chapter-menu">
-        <div id="delete-button" class="chapter-menu-item">
-            <img src="ressources/trash.png">
-            <b>Supprimer</b>
-        </div>
-        <div id="edit-button" class="chapter-menu-item">
-            <img src="ressources/edit.png">
-            <b>Modifier</b>
-        </div>
-        <div id="train-button" class="chapter-menu-item">
-            <b>Entrainement</b>
-        </div>
+        <form action="subjects.html">
+            <button type="submit" id="delete-button" class="chapter-menu-item">
+                <img src="ressources/trash.png">
+                <b>Supprimer</b>
+            </button>
+            <button type="button" id="edit-button" class="chapter-menu-item"  onclick="ShowChapterEdit()">
+                <img src="ressources/edit.png">
+                <b>Renomer</b>
+            </button>
+            <input type="text" name="new-name" id="new-c-name" class="chapter-menu-item">
+            <input type="submit" id="new-c-name-submit" value="Valider" class="chapter-menu-item">
+        </form>
+        <form action="training.html">
+            <button type="submit" id="train-button" class="chapter-menu-item">
+                <b>Entrainement</b>
+            </button>
+        </form>
     </div>
+    <form action="subjects.html">
+        <button id="new-subject" type="submit"><b>+ Matière</b></button>
+    </form>
 </body>
 
 </html>
