@@ -1,4 +1,4 @@
-var lessonMenu = document.getElementById("lesson-menu");
+var lessonMenu = document.getElementsByClassName("lesson-menu")[0];
 
 var targetLesson;
 
@@ -75,6 +75,10 @@ document.addEventListener("contextmenu", (event) => {
         targetLesson = event.target.parentElement.parentElement;
     }
     lessonMenu.classList.add("visible");
+
+    Array.from(document.getElementsByClassName("lesson-id")).forEach((input)=>{
+        input.value=targetLesson.id;
+    })
 });
 
 document.addEventListener("click", (e) => {

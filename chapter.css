@@ -56,7 +56,7 @@
     height: 40px;
     width: 40px;
 }
-#lesson-menu{
+.lesson-menu{
     position: absolute;
     bottom: 0;
     right: 0;
@@ -80,7 +80,7 @@
     max-height: 20px;
     max-width: 20px;
 }
-#lesson-menu.visible{
+.lesson-menu.visible{
     display: block;
 }
 #delete-button{
