@@ -1,0 +1,62 @@
+#pageHeader{
+    display: grid;
+    grid-template-areas:
+    "loc q-edit r-edit l-edit";
+    font-size: larger;
+    background-color: #a6a6a6;
+}
+#location{
+    padding-left: 80px;
+}
+#location{
+    grid-area: loc;
+}
+#edit-question{
+    grid-area: q-edit;
+}
+#edit-rights{
+    grid-area: r-edit;
+}
+#edit-lesson{
+    grid-area: l-edit;
+}
+#valid-edit{
+    grid-area: l-edit;
+}
+.action{
+    display: flex;
+    margin: 5px;
+    background-color: #d9d9d9;
+    border: 1px solid black;
+    border-radius: 5px;
+    text-align: center;
+    align-items:center;
+    justify-content:center;
+}
+.action:hover{
+    background-color: #a6a6a6;
+    cursor: pointer;
+}
+.selected{
+    background-color: #9eff00;
+    cursor: default;
+}
+.selected:hover{
+    background-color: #9eff00;
+    cursor: default;
+}
+.container{
+    display: block;
+    float: left;
+    padding: 10px;
+    margin: 10px;
+    background-color: #d9d9d9;
+    border: 1px solid black;
+    border-radius: 20px;
+}
+.true{
+    border: 1px solid #48e408;
+}
+.wrong{
+    border: 1px solid #e61515;
+}
