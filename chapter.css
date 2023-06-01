@@ -109,3 +109,6 @@
 #new-name, #new-description, #new-submit{
     display: none;
 }
+.visible{
+    display: block;
+}

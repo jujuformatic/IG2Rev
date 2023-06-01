@@ -1,5 +1,4 @@
-var lessonMenu = document.getElementsByClassName("lesson-menu")[0];
-
+var lessonMenu;
 var targetLesson;
 
 function Initiate() {
@@ -10,7 +9,7 @@ function Initiate() {
     ExpandBar();
     ResizeText();
 
-    lessonMenu = document.getElementById("lesson-menu");
+    lessonMenu = document.getElementsByClassName("lesson-menu")[0];
 }
 
 function ExpandBar() {
@@ -54,6 +53,8 @@ window.onresize = ResizeText;
 document.addEventListener("contextmenu", (event) => {
     HideEdit();
 
+    console.log(event.target);
+
     if (!event.target.classList.contains("lesson-item")) {
         lessonMenu.classList.remove("visible");
         return;
@@ -75,6 +76,7 @@ document.addEventListener("contextmenu", (event) => {
         targetLesson = event.target.parentElement.parentElement;
     }
     lessonMenu.classList.add("visible");
+    console.log(lessonMenu.classList);
 
     Array.from(document.getElementsByClassName("lesson-id")).forEach((input)=>{
         input.value=targetLesson.id;
