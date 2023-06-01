@@ -1,0 +1,111 @@
+#pageHeader{
+    font-size: larger;
+    background-color: #a6a6a6;
+}
+#location{
+    display: block;
+    float: left;
+    padding-left: 80px;
+    padding-right: 40px;
+    border-right: 1px solid black;
+    width: fit-content;
+    height: 100%;
+}
+#search{
+    padding-left: 40px;
+    display: block;
+    float: left;
+}
+#search > img{
+    display: block;
+    float: left;
+    height: 40px;
+    width: 40px;
+}
+.lesson{
+    display: grid;
+    grid-template-areas: 
+        'name name description description description sharing sharing';
+    position: relative;
+    margin: auto;
+    margin-top: 10px;
+    overflow: auto;
+    background-color: #d9d9d9;
+    border: 1px solid black;
+    border-radius: 20px;
+}
+.lesson:hover{
+    background-color: #a6a6a6;
+    cursor: pointer;
+}
+.lesson-name{
+    grid-area: name;
+    border-right: 1px solid black;
+    text-align: center;
+}
+.lesson-description{
+    grid-area: description;
+    padding: 5px;
+}
+.lesson-sharing{
+    grid-area: sharing;
+    text-align: center;
+    border-left: 1px solid black;
+}
+.lesson > div > img{
+    height: 40px;
+    width: 40px;
+}
+#lesson-menu{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 20%;
+    display: none;
+    height: fit-content;
+}
+.lesson-menu-item{
+    display: block;
+    float: left;
+    padding: 5%;
+    text-align: center;
+    width: 88%;
+}
+.lesson-menu-item:hover{
+    background-color: #cfcfcf;
+    border: 1px solid black;
+    cursor: pointer;
+}
+.lesson-menu-item > img{
+    max-height: 20px;
+    max-width: 20px;
+}
+#lesson-menu.visible{
+    display: block;
+}
+#delete-button{
+    color: red;
+}
+#new-lesson{
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    background-color: #9eff00;
+    border: 1px solid black;
+    border-radius: 20px;
+    text-align: center;
+    font-size: large;
+    padding: 5px;
+    height: fit-content;
+    width: fit-content;
+}
+#new-lesson:hover{
+    background-color: #c2ff5e;
+    cursor: pointer;
+}
+#new-lesson > h1{
+    display: inline;
+}
+#new-name, #new-description, #new-submit{
+    display: none;
+}
