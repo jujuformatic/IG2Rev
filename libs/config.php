@@ -12,8 +12,8 @@ $BDD_base="testdb_<nom>";
 
 // MACHINE LINUX 
 $BDD_host="localhost";
-$BDD_user="TH";
-$BDD_password="XaSQL33"; // vide sous windows
-$BDD_base="WEB";
+$BDD_user="USERNAME";
+$BDD_password="PASSWORD"; // vide sous windows
+$BDD_base="DB_NAME";
 
 ?>
